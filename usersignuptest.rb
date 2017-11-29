@@ -7,7 +7,7 @@ class Testusersignup < Minitest::Test
 end
 
 	def test_assert_that_usernames_are_strings
-		username  = annie
+		username  = "annie"
 		assert_equal(String, set_up_username(username))
 	end
 
