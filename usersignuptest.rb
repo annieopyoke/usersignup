@@ -10,7 +10,10 @@ end
 		username  = "annie"
 		assert_equal(String, set_up_username(username))
 	end
-
+def test_assert_that_intergers_are_still_strings
+	username = 1254
+	assert_equal(String, set_up_username(username))
+end
 
 
 
