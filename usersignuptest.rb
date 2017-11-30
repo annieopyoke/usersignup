@@ -31,3 +31,9 @@ end
 		assert_equal(true, set_up_email_address(email_address))
 	end
 end
+
+	def test_assert_that_email_is_confirmed
+		email_address = "annieopyoke@gmail.com"
+		confirmed_email = "annieopyoke@gmail.com"
+		assert_equal("confirmed email", confirmed_email(confirmed_email))
+	end
