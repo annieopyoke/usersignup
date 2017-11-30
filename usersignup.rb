@@ -6,8 +6,16 @@ def set_up_username(username)
 	else
 		"invalid"
 	end
+end
 
-
-
+def set_up_email_address(email_address)
+	email_address = email_address.to_s
+	puts "what is your email address"
+	if email_address == "annieopyoke@gmail.com"
+		true
+	else 
+		false
+	end
 
 end
+

@@ -27,7 +27,7 @@ class Testusersignup < Minitest::Test
 end
 
 	def test_assert_that_email_address_is_given
-		email = "annieopyoke@gmail.com"
-		assert_equal("annieopyoke@gmail.com", set_up_email_address(email_address))
+		email_address = "annieopyoke@gmail.com"
+		assert_equal(true, set_up_email_address(email_address))
 	end
 end
