@@ -26,19 +26,29 @@ class Testusersignup < Minitest::Test
 		assert_equal("valid", set_up_username(username))
 end
 
-	def test_assert_that_email_address_is_given
+	def test_assert_that_email_address_is_a_string
 		email_address = "annieopyoke@gmail.com"
-		assert_equal(true, set_up_email_address(email_address))
+		assert_equal("valid", set_up_email_address(email_address))
 	end
-end
 
-	def test_assert_that_email_is_confirmed
+	def test_assert_that_email_confirmation_is_the_same_as_email
 		email_address = "annieopyoke@gmail.com"
 		confirmed_email = "annieopyoke@gmail.com"
-		assert_equal("confirmed email", confirmed_email(confirmed_email))
+		assert_equal("valid", confirmed_email(email_address, confirmed_email))
 	end
 
-	def test_assert_that_password_contains_contains_at_least_8_chara
-		password = "Cashdollar@17"
-		assert_equal(true, password)
+	def test_assert_that_email_is_invalid_if_not_the_same
+		email_address = "annieopyoke@gmail.com"
+		confirmed_email = "annieopyoke@gmailcom"
+		assert_equal("invalid", confirmed_email(email_address, confirmed_email))
 	end
+
+end
+
+
+
+# 	def test_assert_that_password_contains_contains_at_least_8_chara
+# 		password = "Cashdollar@17"
+# 		assert_equal(true, password(password))
+# 	end
+# end
