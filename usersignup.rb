@@ -25,8 +25,9 @@ def confirmed_email(confirmed_email)
 		true
 	else
 		false
+	end
+end
 
-end
-end
+
 
 

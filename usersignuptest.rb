@@ -37,3 +37,8 @@ end
 		confirmed_email = "annieopyoke@gmail.com"
 		assert_equal("confirmed email", confirmed_email(confirmed_email))
 	end
+
+	def test_assert_that_password_contains_contains_at_least_8_chara
+		password = "Cashdollar@17"
+		assert_equal(true, password)
+	end
